@@ -1,7 +1,7 @@
 import axios from "axios";
 import { SelectFields } from "../selectors/SelectFileds";
 
-export const baseUrl = `https://hacker-news.firebaseio.com/v0/`;
+export const baseUrl = process.env.REACT_APP_BACKEND_API;
 export const newStoriesUrl = `${baseUrl}newstories.json`;
 export const storyUrl = `${baseUrl}item/`;
 
